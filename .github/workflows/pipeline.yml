@@ -13,10 +13,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      - name: Paso con error
-        run: echo "Pipeline ejecutado correctamente."
-        runx: comando_inexistente   # ❌ error de sintaxis
 
       - name: Mostrar información del entorno
         run: |
