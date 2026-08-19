@@ -46,8 +46,7 @@ class WebapiApplicationTests {
 		MockMvc.perform(get("/")
 				.accept(MediaType.TEXT_PLAIN))
 			.andExpect(status().isOk())
-			// Deliberate failure: expect an incorrect string to force test failure
-			.andExpect(content().string("Hello CI/CD World!!"));
+			.andExpect(content().string("Hello CI/CD World!"));
 	}
 
 	@Test
